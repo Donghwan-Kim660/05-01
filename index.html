@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Super Mario World</title>
+	<style>
+
+		header{width: 100%; height: 50px; margin: auto;}
+		header img{text-align: center;}
+
+		body {
+			background-image: url(BG.png); 
+			background-repeat: no-repeat; 
+			background-size: cover;
+			}
+
+		.rain{ width:800px; 
+				position: absolute; 
+				animation: rr 1.5s infinite ease-in-out;
+				left:0px; }
+
+		@keyframes rr{
+			from{ bottom: 1500px; opacity: 0.8}
+			to{ bottom: 0px; opacity: 1}
+			}
+
+		.rain2{ width:1200px; 
+				position: absolute; 
+				animation: rrr 1.5s infinite ease-in-out;
+				left:0px; }
+
+		@keyframes rrr{
+			from{ bottom: 0px; opacity: 2}
+			to{ bottom: 700px; opacity: 0.25}
+			}
+
+
+	</style>
+</head>
+<body>
+
+	<audio controls autoplay>
+	  <source src="bgm.mp3" type="audio/mpeg">
+	</audio>
+
+	<div class="rain" id="01" style="left: 2340px; animation-duration: 3.5s;">
+		<img src="mushroom.png" style="width: 170px;">
+	</div>
+
+	<div class="rain" id="02" style="left: 1850px; animation-duration: 2.75s;">
+		<img src="banzaibill.png" style="width: 450px;">
+	</div>
+
+	<div class="rain" id="03" style="left: 1320px; animation-duration: 0.95s;">
+		<img src="bill.png" style="width: 75px;">
+	</div>
+
+	<div class="rain" id="04" style="left: 1500px; animation-duration: 4.05s;">
+		<img src="flower.png" style="width: 185px;">
+	</div>
+
+	<div class="rain" id="06" style="left: 250px; animation-duration: 3.2s;">
+		<img src="coin.png" style="width: 100px;">
+	</div>
+
+	<div class="rain" id="07" style="left: 1050px; animation-duration: 5.2s;">
+		<img src="feather.png" style="width: 270px;">
+	</div>
+
+	<div class="rain" id="08" style="left: 780px; animation-duration: 4.5s;">
+		<img src="goomba.png" style="width: 290px;">
+	</div>
+
+	<div class="rain2" id="08" style="left: 50px; animation-duration: 1.75s;">
+		<img src="mole.png" style="width: 320px;">
+	</div>
+
+	<div class="rain" id="09" style="left: 1680px; animation-duration: 3.5s;">
+		<img src="star.png" style="width: 380px;">
+	</div>
+
+	<div class="rain" id="10" style="left: 270px; animation-duration: 3.6s;">
+		<img src="yoshi egg.png" style="width: 600px;">
+	</div>
+
+	<div class="rain" id="11" style="left: 1340px; animation-duration: 4.75s;">
+		<img src="yoshi.png" style="width: 420px;">
+	</div>
+
+</body>
+</html>
